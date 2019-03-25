@@ -1,0 +1,104 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css2.css">
+</head>
+<body onload = "cousel()">
+<div id="full">
+	<div id="findiv">
+	<form>
+	<label class="labels">SUBJECT:</label>
+		<div class = "lo">
+			<select class="sem1">
+        	       <option value = "1">MATHS-1</option>
+        	       <option value = "1">CSE-1</option>
+        	       <option value = "1">PHYSICS</option>
+        	       <option value = "1">EEE</option>
+        	       <option value = "1">CIVIL</option>
+        	      </select>
+        	      <select class="sem2">
+        	       <option value = "2">CHEM</option>
+        	       <option value = "2">CSE2</option>
+        	       <option value = "2">ECE</option>
+        	       <option value = "2">MECH</option>
+        	       <option value = "2">MaTHS-2</option>
+        	       </select>
+        	      <select class="sem3">
+        	       <option value = "3">DML</option>
+        	       <option value = "3">DS</option>
+        	       <option value = "3">DDCO</option>
+        	       <option value = "3">WT</option>
+                       <option value = "3">IDS</option>
+                       </select>
+                       <select class="sem4">
+        	       <option value = "4">DBMS</option>
+        	       <option value = "4">MPCA</option>
+        	       <option value = "4">DAA</option>
+        	       <option value = "4">MATHS3</option>
+        	       <option value = "4">TOC</option>
+			</select><br>	
+		</div>
+			<label >ISA:</label>
+		<div class="lo1">
+			<select class="sem1">
+			<option value="1i1">ISA1</option>
+			<option value="1i2">ISA2</option>
+			</select>
+			<select class="sem2">
+			<option value="2i1">ISA1</option>
+			<option value="2i2">ISA2</option>
+			</select>
+			<select class="sem3">
+			<option value="3i1">ISA1</option>
+			<option value="3i2">ISA2</option>
+			</select>
+			<select class="sem4">
+			<option value="4i1">ISA1</option>
+			<option value="4i2">ISA2</option>
+			</select>
+		</div><br>
+			<label>ESA:</label>
+		<div  class = "lo2">
+			<select class="sem1">
+			<option value="1esa">ESA-1</option>
+			</select>
+			<select class="sem2">
+			<option value="2esa">ESA-2</option>
+			</select>
+			<select class="sem3">
+			<option value="3esa1">ESA-3</option>
+			</select>
+			<select class="sem4">
+			<option value="4esa1">ESA-4</option>
+			</select>
+		</div>
+		<br>
+	<button id = "sub2" name="data" type="button" onclick="alert('134')">SUBMIT</button>
+	<a href="new.html"><button id = "sub3" name="data" type="button" onclick="location.reload()">LOGOUT</button></a>
+	</form>
+	</div>
+	</div>
+<div id="half"><h1><i>TO BE DONE DURING PHASE 3</i></h1></div>	
+
+<script>
+
+
+function cousel()
+{
+	//document.getElementById("no").style.display = "none";
+	var hk=localStorage.getItem('copy')
+	console.log(hk)
+	var acti = document.getElementById("subjet")
+	var j = "sem"+hk;
+	document.getElementsByClassName(j)[0].style.display = "block";
+	document.getElementsByClassName(j)[1].style.display = "block";
+	document.getElementsByClassName(j)[2].style.display = "block";
+	//document.getElementsByClassName(j).style.display = "block";
+}
+
+//ele.addEventListener("click",click(),false)
+
+</script>
+
+	</body>
+</html>
+

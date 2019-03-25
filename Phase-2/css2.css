@@ -1,0 +1,60 @@
+html, body { height: 100%; width:100%;padding: 0; margin: 0; background-color: #f0f0f0	 }
+#full{width:50%;height:100%;float:left}
+#half{
+width:50%;height:100%;background-color:grey;float:right}
+
+#findiv {
+    background-color: #787878;
+    margin-top: 100px;
+    margin-left:100px;
+    margin-bottom:-200px;
+    height : 40%;
+    width: 40%;
+    	
+    border: 1px solid #efefef;
+    padding: 30px;
+}
+
+
+.sem1{ width:50%;
+display: none;background-color: whitesmoke;
+    color: black;
+    padding: #px;
+    font-size: #px;
+    border: none;
+	}
+.sem2{display: none;background-color: whitesmoke;
+    color: black;
+    padding: #px;
+    font-size: #px;
+    border: none;
+}
+.sem3{display: none;background-color: whitesmoke;
+    color: black;
+    padding: #px;
+    font-size: #px;
+    border: none;
+}
+.sem4{display: none;background-color: whitesmoke;
+    color: black;
+    padding: #px;
+    font-size: #px;
+    border: none;
+	}
+.lo2{
+	margin-top: -17px;
+        margin-left: 85px;
+        width:50%
+}
+.lo1
+{
+	margin-top: -17px;
+        margin-left: 85px;
+        width:45%
+}
+.lo
+{	margin-top: -17px;
+        margin-left: 85px;
+       width:67%;
+}
+

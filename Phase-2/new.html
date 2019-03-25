@@ -1,0 +1,112 @@
+<html>
+	<head>
+<link rel="stylesheet" type="text/css" href="css.css"></head>
+	<body>
+<div id="div1">
+	<div id = "div3">
+		<form>
+		 <label>SRN:</label>
+             <input type="text" id="usrname" name="usrname"  required>
+             
+             		<p id="sss" display="none" align="center"></p>
+             
+             <br>
+             
+         
+	 <label>Select Your Semester</label>
+             <select id = "mysem" class="cmmsec">
+               <option value = "1">1</option>
+               <option value = "2">2</option>
+               <option value = "3">3</option>
+               <option value = "4">4</option>
+             </select>
+             <br><br>
+             <label>Select Your Course</label>
+             <select id = "mycr" class="cmmsec">
+               <option value = "cs">CSE</option>
+               <option value = "ec">ECE</option>
+               <option value = "ee">EEE</option>
+               <option value = "mes">MES</option>
+               <option value = "bt">BT</option>
+               <option value = "cv">Civil</option>
+               </select>
+             <br><br>
+          <label >Select Your Section</label>
+             <select id = "mysec" class="cmmsec">
+               <option value = "A">A</option>
+               <option value = "B">B</option>
+               <option value = "C">C</option>
+               <option value = "D">D</option>
+               <option value = "E">E</option>
+               <option value = "F">F</option>
+               <option value = "G">G</option>
+               <option value = "H">H</option>
+             </select>
+             <br><br>
+                   <a id="linkid"><button id = "sub" name="data" type="button" onclick="haha()">LOGIN</button></a>
+                  <!--<a href="new.html"><button id = "sub3" name="data" type="button" onclick="location.reload()">LOGOUT</button></a>-->
+<br>
+
+		</form>
+	</div>
+</div>
+<script>
+/*function linkdisable()
+{
+	document.getElementById("linkid").disabled = true;
+}*/
+function haha() 
+{
+	var1 = document.getElementById("usrname").value;
+	var i=0,j=0,k="",p="";
+	for(i=0;i<var1.length;i++)
+	{
+		if(j<3)
+		{
+			k=k+var1[i];
+			j=j+1;
+		}
+		else
+		{
+			p=p+var1[i]
+		}	
+	}
+	
+	if(k == "PES" || k=="FAC")
+	{
+		document.getElementById("sss").innerHTML= "welcome";	  //document.getElementById("usrname").style.margin= "0 0 30 0";
+		document.getElementById("sss").style.color="green";
+		var link = document.getElementById("linkid")
+		window.location.href = "new2.html"	
+		var take = document.getElementById("mysem");
+		var fix = take.value
+		localStorage.setItem('copy',fix)
+		//document.getElementById("sub").disabled = true;
+		/*var x=document.getElementsByClassName("hide")
+		for(var i=0;i<x.length;i++)
+		{
+			x[i].style.display="block";
+		}*/
+		/*var b = document.getElementById("sub")
+		var a = document.createElement('a');
+		//var linkText = document.createTextNode("my title text");
+		a.appendChild(linkText);
+		a.title = "my title text";
+		a.href = "new2.html";
+		b.appendChild(a);*/
+
+
+	}
+	else
+	{
+		document.getElementById("sss").innerHTML= "wrong usn";
+		document.getElementById("sss").style.color="red";
+	}
+	
+}
+
+
+
+</script>
+</body>
+</html>
